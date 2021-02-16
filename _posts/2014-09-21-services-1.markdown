@@ -2,7 +2,7 @@
 layout: default
 img: tile1.jpeg
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: Bathrooms
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+  Providing our clients with stylish new bathrooms and contemporary renovations that stand the test of time. Our reputation has been built on the foundations of delivering quality work on time and on budget.

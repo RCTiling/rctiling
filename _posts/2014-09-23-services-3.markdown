@@ -2,7 +2,9 @@
 layout: default
 img: tile2.jpeg
 category: Services
-title: Google Web Fonts and<br>Font Awesome Icons
+title: Walls and Floors
 description: |
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+Our extensive tiling experience allows us to predict and determine possible problem areas that may arise in the tiling process that an inexperienced tiler may not be able to detect.
+
+We strive to provide valuable ideas and solutions saving you time and money while increasing the quality of your job.
