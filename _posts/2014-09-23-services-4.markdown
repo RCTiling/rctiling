@@ -5,7 +5,7 @@ category: Contact
 title: Contact Us
 description: |
 header:
-  overlay_image: images/2contact.jpg
+  overlay_image: images/contact2.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   actions:
     - label: "Book Now!"
