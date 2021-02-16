@@ -4,5 +4,24 @@ img: tile2.jpeg
 category: Contact
 title: Contact Us
 description: |
+header:
+  overlay_image: images/2contact.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  actions:
+    - label: "Book Now!"
+      url: "https://eventty.github.io/form.html"
 ---
-This is a test.
+
+## Enquiring and booking is as simple as contacting us through one of the following:
+
+<br>
+
+<i class="fas fa-envelope-square"></i>       **Email** us at:
+> <eventty@dismail.de>
+
+<i class="fas fa-phone-square"></i>      **Phone** or **text** us at:
+> [0404 103 010](tel:0404103010)
+
+<i class="fas fa-pen-square"></i>   **Get a quote** by completing our easy to use Contact Form:
+
+> [Contact Form](https://eventty.github.io/form.html "Contact Form")
