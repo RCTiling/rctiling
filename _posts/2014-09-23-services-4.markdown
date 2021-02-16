@@ -12,16 +12,16 @@ header:
       url: "https://tripetto.app/run/17KE6GE75J"
 ---
 
-## Enquiring and booking is as simple as contacting us through one of the following:
+### Enquiring and booking is as simple as contacting us through one of the following:
 
 <br>
 
-<i class="$fa-var-envelope</i>       **Email** us at:
+**Email** us at:
 > <rc.tiling.rc@gmail.com>
 
-<i class="fas fa-phone-square"></i>      **Phone** or **text** us at:
+**Phone** or **text** us at:
 > [0401 769 656](tel:04017696506)
 
-<i class="fas fa-pen-square"></i>   **Get a quote** by completing our easy to use Contact Form:
+**Get a quote** by completing our easy to use Contact Form:
 
 > [Contact Form](https://tripetto.app/run/17KE6GE75J "Contact Form")
