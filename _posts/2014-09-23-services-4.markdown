@@ -1,6 +1,6 @@
 ---
 layout: default
-img: tile2.jpeg
+img: contact2.jpg
 category: Contact
 title: Contact Us
 description: |
