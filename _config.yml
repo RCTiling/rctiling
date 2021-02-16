@@ -26,6 +26,8 @@ permalink: pretty
 # ----------------------- #
 
 social:
+  - title: edit
+  - url: https://rctiling.github.io/tiling/form.html
   - title: facebook
     url: https://www.facebook.com/rctiling
   - title: instagram
