@@ -11,11 +11,6 @@ header:
     - label: "Book Now!"
       url: "https://tripetto.app/run/17KE6GE75J"
 ---
-
-### Enquiring and booking is as simple as contacting us through one of the following:
-
-<br>
-
 **Email** us at:
 > <rc.tiling.rc@gmail.com>
 
