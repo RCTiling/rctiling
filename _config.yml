@@ -1,52 +1,66 @@
+# Jekyll configuration
+#markdown: redcarpet
+#highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+language: 'en-uk'
 
-# Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
+# Website info
+name: 'Finding The Way Home'
+description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+
+short_url: 'jekyller.github.io/jasper/'
+google_analytics: UA-69281367-1
+disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /jasper/
 
 # Permalinks
-permalink:           /:title
-relative_permalinks: true
+permalink: /:title
+# permalink: /author/:username
+# permalink: /tag/:tag
 
-# Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
-url:                 site url
-rss:                 rss feed url
-baseurl:             '/'
-baseurl_posts_img:   '/assets/images/posts/'
-baseurl_featured_img: '/assets/images/hero/'
-baseurl_featured_thumbnail: '/assets/images/thumbnail/'
-baseurl_javascripts: '/assets/javascripts/'
-icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
-disqus:              disqus_shortname # get it on https://disqus.com/admin/
+# gems and other configs
+plugins: [jekyll-paginate]
 
-author:
-  name:           	 your name
-  url:            	 your site url
-  facebook:          username
-  twitter:           username
-  google_plus:       username
-  linkedin:          username
-  dribbble:          username
-  pinterest:         username
-  kiva:              username
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
 
-fb_admins:           your facebook profile id
-fb_appid:            your facebook app id
 
-# Server
-destination:      	 ./_site
-exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
-port:             	 9001
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
 
-defaults:
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "default"
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: false
+lsi: false
+username: jekyller
+repo: jasper
+branch: master
+relative_source: ../jasper/
+destination: ../jasper-pages/
+production_url:  https://jekyller.github.io/jasper/
+source_url:  https://github.com/jekyller/jasper/
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - node_modules
+  - .git

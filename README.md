@@ -1,131 +1,103 @@
-# Mickey
+## Jasper
 
-Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
+[![Build Status](https://travis-ci.org/jekyller/jasper.svg?branch=master)](https://travis-ci.org/jekyller/jasper)
+[![Ruby](https://img.shields.io/badge/ruby-2.5.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
+[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper)
 
-It's inspired by [Hyde](http://hyde.getpoole.com), [Medium](http://medium.com), and [Squarespace](http://squarespace.com).
+This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).
 
-![Mickey screenshots](/assets/images/demo.png)
+You might well ask at this point why bother making a new Casper's clone?
+Although this is inspired by Kasper, there are several **additional** features which make this port closer
+to the original theme. This port is based on the last Casper v1.3.7 (same as v1.4.0 that runs in Ghost 1.0).
 
-See Mickey in action with [the demo site](http://vincentchan.github.io/mickey) or [my personal blog](http://aneverendingdream.com).
+**New:** Check out **[Jasper2](https://github.com/jekyller/jasper2)**, a new port of Casper version 2!
 
-## Contents
+## Live demo
 
-- [Installation](#installation)
-- [Options](#options)
-  - [Post front matter](#post-front-matter)
-  - [Identity](#identity)
-  - [Typography](#typography)
-  - [Images](#images)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+[Jasper Live Demo](https://jekyller.github.io/jasper)
 
-## Installation
-
-Mickey requires [Jekyll](http://jekyllrb.com/) 2.x. and [Gulp](http://gulpjs.com/) for workflow automation.
-
-Make sure to run `gem update jekyll` if you aren’t on the latest version or `gem install jekyll` if this is your first time installing it.
-
-If you want to use Mickey, please follow these steps:
-
-1. Fork the [Mickey](https://github.com/vincentchan/mickey) repo.
-2. Clone the repo you just forked and rename it.
-3. Run `npm install` to install the dependencies for the theme contained in `package.json`
-4. Update `_config.yml` with your own info and replace demo posts and pages with your own. Full details below.
-
-## Options
-
-Mickey includes some customizable options:
-
-### Post front matter
-
-By default, we use the following:
-
-```
----
-layout:           post
-title:            "your post title"
-date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
-last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-excerpt:          "for meta description" # Optional for overwriting content excerpt
-categories:       your post categories # ["category1"] - best is to have one category in a post
-tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
-image:
-  feature: your post featured image file name # image.jpg, suggested size:  2000x700px
-  topPosition: 0px # top position for featured image if needed
-bgContrast: dark # Featured image contrast
-bgGradientOpacity: darker # darker or lighter - control featured image opacity
----
-```
-
-### Identity
-
-To replace logos with your own, simply update the following files in `assets/images/`:
-
-- `logo-white.svg`
-- `logo-black.svg`
-- `logo-text-white.svg`
-- `logo-text-black.svg`
-
-### Typography
-
-Vertical rhythm and spacing are mostly handled by [typebase.css](http://devinhunt.github.io/typebase.css/). If you want to change any settings related to typography (e.g. fonts, type scale...etc), please do it in `_scss/_typography.scss`
-
-#### Blockquote
-
-We have two types of blockquote design:
-
-```html
-// For large featured quote
-<blockquote class="largeQuote">...</blockquote>
-
-// For normal quote
-// Use 'u--startsWithDoubleQuote' class only when the quote starts with a double quote
-<blockquote class="u--startsWithDoubleQuote"></blockquote>
-```
-
-#### Hanging quotes
-
-If a paragraph starts with a quotation market, please add the following to support [hanging quotes](https://en.wikipedia.org/wiki/Hanging_punctuation):
-
-```html
-<p class="u--startsWithDoubleQuote">
-...
-</p>
-```
-
-### Images
-
-To maintain vertical rhythm and spacing, I suggest using the following CSS class (e.g. `img--5xLeading`...`img--16xLeading`) to control the image height:
-
-```html
-<div class="img img--fullContainer img--14xLeading" style="background-image: url();"></div>
-```
-
-You can reference `_scss/_images.scss` for details.
-
-## Development
-
-Mickey has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted landing page. **Please avoid using this branch.**
-
-During development, simply run `gulp` in terminal and it will compile the jekyll site, compile Sass, create post thumbnails, launch BrowserSync & watch files for changes and recompile.
-
-Source Sass files are located in `_scss/`, included into `main.scss`, and compile to `assets/css/main.css`.
-
-Post thumbnails are automatically resized via Gulp's image resize package, and moved to `assets/images/thumbnails`. Any featured images you put in `assets/images/hero` will be automatically created
-
-## Author
-
-**Vincent Chan**
-- <https://github.com/vincentchan>
-- <https://twitter.com/vincentchan>
+[Casper's Original Here](https://demo.ghost.io)
 
 
-## License
+## Screenshots
 
-Open sourced under the [MIT license](LICENSE.md).
+**Home page**
+![home page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen1.png)
 
-**Disclaimer: This Jekyll theme is not affiliated with Disney. Obviously :)**
+**Post page**
+![post page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen2.png)
+
+**Author page**
+![author page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen3.png)
+
+**Related posts page**
+![tag page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen4.png)
+
+**Tags page with opened sidebar**
+![sidebar page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen5.png)
+
+**404 page**
+![related page](https://raw.githubusercontent.com/jekyller/jasper/master/assets/images/jasper_screen6.png)
+
+## Jasper theme includes
+
+* Pagination
+* Google Analytics tracking
+* Author's profile with picture
+* Disqus comments (not Ghost standard)
+* Author page (New 07.02.2015)
+* Tag page(s) (New 07.02.2015)
+* 404 page (New 07.02.2015)
+* Toggleable sliding sidebar (New 07.02.2015)
+* Related posts view (New 30.10.2015)
+* Tag description(s) (New 30.10.2015)
+* Code Syntax Highlight (New 24.11.2015)
+* Code Syntax Highlight with [highlight.js](https://highlightjs.org/) (New 06.04.2016)
+* Rss updated to Jekyll v3 (New 06.04.2016)
+* Updated to Casper v1.3.7 **(New 17.11.2017)**  
+* 'Out of the box' support for Multiple Authors **(New 17.11.2017)**  
+
+## How to use it
+
+### Deployment
+
+**Important:**  For security reasons, Github does not allow plugins (under _plugins/) when deploying with Github Pages. This means:
+
+**1)** that we need to generate your site locally (more details below) and push the resulting HTML to a Github repository;
+
+**2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from [jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the generated *_site/* files to your *gh-pages* branch.
+ This later approach is the one I am currently using to generate the live demo.
+
+For option **1)** simply clone this repository (*master branch*), and then run `bundle exec jekyll serve` inside the directory. Upload the resulting *_site/* contents to your repository (*master branch* if uploading as your personal page (username.github.io) or *gh-pages branch* if uploading as a project page (as for the [demo](https://github.com/jekyller/jasper/tree/gh-pages)).
+
+For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you need then is to change your details in *[\_config.yml](_config.yml)* so that you can push to your github repo. You will also need to generate a secure key to add to your *[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file). Also make sure you read the documentation from [jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear advantages in that you simply push changes to your files and all the html files are generated for you. Also you get to know if everything is still fine with your site builds. Don't hesitate to contact me if you still have any issues (see below about issue tracking).
+
+### Author pages
+
+In order to properly generate author pages you need to rename the field *categories* in the front matter of every post to match that of your each author *username* as defined in the *[\_config.yml](_config.yml)* file.
+With the latest update, multiple author blogs are now supported out of the box.
+
+## Issues and contributing
+
+This install builds well with Ruby v2.4.2 and Jekyll v3.7.4. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/jasper/issues).
+
+Feel free pull-request your patches and fixes.
+
+## Thanks
+
+
+Many thanks to the Ghost team for all the design work that allows to make this clone possible. Also many thanks to all contributors, that help keeping the project alive and updated :smile:
+
+
+## Copyright & License
+
+Same licence as the one provided by Ghost's team. See Casper's theme [license](GHOST.txt).
+
+Copyright (C) 2015-2017 - Released under the MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

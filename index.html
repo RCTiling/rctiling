@@ -1,50 +1,37 @@
 ---
 layout: default
-title: Mickey Theme for Jekyll
+title: Finding The Way Home
+cover: 'assets/images/cover1.jpg'
+class: 'home-template'
+navigation: True
+logo: 'assets/images/ghost.png'
+current: home
 ---
+<!-- < default -->
+<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<section class="section--first section--frontpage">
-  <div class="section-title">
-    <div class="container">
-      <h1 class="textLogo textLogo--frontpage">
-        {{ site.name }}
-      </h1>
-      <div class="postMeta-wrapper postMeta-wrapper--frontpage">
-        <ul class="postMeta">
-          <li class="postMeta-tagline">
-            a minimal theme for Jekyll
-          </li>
-        </ul>
-      </div>
+<!-- The big featured header  -->
+<header class="main-header {% if page.cover %}"
+        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">{{ site.description }}</h2>
+        </div>
     </div>
-  </div>
-</section>
-<section class="section--postsWrapper">
-  <div class="container">
-    <div class="blockGroup">
-      <ul class="blockGroup-list">
-        {% for post in site.posts %}
-          <li class="block">
-            <div class="postArticle-wrapper">
-              <article class="postArticle postArticle--short">
-                {% if post.image.feature %}
-                  <a href="{{ post.url }}">
-                    <div class="postArticle-image desaturate" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')">
-                    </div>
-                  </a>
-                {% else %}
-                <a href="{{ post.url }}">
-                  <div class="postArticle-image" style="background-image:url('{{site.baseurl}}assets/images/logo-black.svg')">
-                  </div>
-                </a>
-                {% endif %}
-                <a class="postArticle-title" href="{{ post.url }}">{{ post.title }}</a>
-              </article>
-              <div class="block-postMeta">{{ post.date | date_to_string }}</div>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</section>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<!-- The main content area on the homepage -->
+<main id="content" class="content" role="main">
+
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
+
+</main>
