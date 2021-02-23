@@ -1,6 +1,6 @@
 ---
 layout: default
-img: contact2.jpg
+img: contact2.png
 category: Contact
 title: Contact Us
 description: |
@@ -8,15 +8,10 @@ header:
   overlay_image: images/contact2.png
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   actions:
-    - label: "Book Now!"
-      url: "https://tripetto.app/run/17KE6GE75J"
+
 ---
 **Email** us at:
 > <allcoastal-tiling@hotmail.com>
 
 **Phone** or **text** us at:
 > [0401 769 656](tel:04017696506)
-
-**Get a quote** by completing our easy to use Contact Form:
-
-> [Contact Form](https://tripetto.app/run/17KE6GE75J "Contact Form")
