@@ -1,6 +1,6 @@
 ---
 layout: default
-img: tile2.jpeg
+img: tile2.png
 category: Services
 title: Walls and Floors
 description: |
